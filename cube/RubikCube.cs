@@ -19,7 +19,20 @@ namespace cube
         /// </summary>
         private int size;
 
-        private Point3D origina;
+        private Point3D origin;
+
+        /// <summary>
+        /// Lenght of the cube edge
+        /// </summary>
+        private double edge_len;
+        
+        /// <summary>
+        /// Space between the cubes forming the bigger cube
+        /// </summary>
+        private double space;
+
+        public Cube2D projection;
+
 
     }
      
