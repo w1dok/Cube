@@ -20,6 +20,48 @@ namespace cube
             createCube();
         }
 
+        public Cube2D(int size, CubeFace[,] c)
+        {
+            this.size = size;
+            this.projection = c;
+
+            if (!isValidProjection())
+            {
+                throw new InvalidDataException();
+            }
+        }
+
+        private bool isValidProjection()
+        {
+            Dictionary<CubeFace, int> ct = new Dictionary<CubeFace, int>{
+                {CubeFace.L, 0},
+                {CubeFace.D, 0},
+                {CubeFace.R, 0},
+                {CubeFace.B, 0},
+                {CubeFace.F, 0},
+                {CubeFace.U, 0},
+                {CubeFace.None, 0},
+            };
+
+            for (int i = 0; i < size * 4; i++)
+            {
+                for (int j = 0; j < size * 3; j++)
+                {
+                    ct[projection[i, j]]++;
+                }
+            }
+
+            foreach (var f in ct)
+            {
+                if (f.Value != 9 && f.Key != CubeFace.None)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         private void createCube()
         {
             for (int i = 0; i < size * 4; i++)
