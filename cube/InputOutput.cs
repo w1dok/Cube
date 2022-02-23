@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace cube
+namespace magic_cube
 {
     class InputOutput
     {

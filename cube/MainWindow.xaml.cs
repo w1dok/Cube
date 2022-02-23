@@ -17,7 +17,7 @@ using System.Diagnostics;
 using System.IO;
 using Microsoft.Win32;
 
-namespace cube
+namespace magic_cube
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -343,5 +343,5 @@ namespace cube
             init();
         }
     }
-    }
 }
+

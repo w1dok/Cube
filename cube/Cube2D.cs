@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IO;
 
-namespace cube
+namespace magic_cube
 {
     public class Cube2D
     {

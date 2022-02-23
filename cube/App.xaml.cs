@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace cube
+namespace magic_cube
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

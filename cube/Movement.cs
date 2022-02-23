@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 
-namespace cube
+namespace magic_cube
 {
     public enum Move
     {

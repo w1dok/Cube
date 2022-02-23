@@ -10,7 +10,7 @@ using System.Windows;
 using System.Threading;
 using System.IO;
 
-namespace cube
+namespace magic_cube
 {
     public class RubikCube : Cube
     {

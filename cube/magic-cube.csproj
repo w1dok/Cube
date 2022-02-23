@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Cube.cs" />
     <Compile Include="Cube2D.cs" />
+    <Compile Include="Helpers.cs" />
     <Compile Include="InputOutput.cs" />
     <Compile Include="Movement.cs" />
     <Compile Include="MyModelVisual3D.cs" />

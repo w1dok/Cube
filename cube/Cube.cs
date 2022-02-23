@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows.Media.Media3D;
 using System.Windows.Media;
 
-namespace cube
+namespace magic_cube
 {
     /// <summary>
     /// Designates a standart naming of a cube's sides or faces
@@ -24,7 +24,7 @@ namespace cube
     /// <summary>
     /// Create a cube
     /// 
-    /// In order to distplay the cube to a <see cref="Viewport3DVisual"/>:
+    /// In order to distplay the cube to a <see cref="Viewport3D"/>:
     /// <code>
     /// Cube c = new Cube(new Point3D(0, 0, 0), 1, new Dictionary&lt;CubeFace, Material&gt;() {
     ///     {CubeFace.F, new DiffuseMaterial(new SolidColorBrush(Colors.White))},
