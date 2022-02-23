@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Media.Media3D;
+using System.Diagnostics;
+using System.IO;
+using Microsoft.Win32;
 
 namespace cube
 {
@@ -24,5 +28,15 @@ namespace cube
         {
             InitializeComponent();
         }
+
+        public enum Difficulty
+        {
+            Easy = 10,
+            Normal = 20,
+            Hard = 30,
+            VeryHard = 40
+        }
+
+        Point 
     }
 }
