@@ -12,7 +12,15 @@ using System.IO;
 
 namespace cube
 {
-    internal class RubikCube : 
+    public class RubikCube : Cube
     {
+        /// <summary>
+        ///  The cube will be size x sixe x size
+        /// </summary>
+        private int size;
+
+        private Point3D origina;
+
     }
+     
 }
