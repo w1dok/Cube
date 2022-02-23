@@ -37,6 +37,14 @@ namespace cube
             VeryHard = 40
         }
 
-        Point 
+        Point startMoveCamera;
+        bool allowMoveCamera = false, allowMoveLayer = false, gameOver = false;
+        int size = 3;
+        double edge_len = 1;
+        double space = 0.05;
+        double len;
+
+        Transform3DGroup rotation = new Transform3DGroup();
+        //RubikCube c;
     }
 }
