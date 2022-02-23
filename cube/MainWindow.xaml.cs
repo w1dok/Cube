@@ -45,6 +45,13 @@ namespace cube
         double len;
 
         Transform3DGroup rotation = new Transform3DGroup();
-        //RubikCube c;
+        RubikCube c;
+        MyModelVisual3D touchFaces;
+        Movement movement = new Movement();
+        HashSet<string> touchedFaces = new HashSet<string>();
+
+        List<KeyValuePair<Move, RotationDirection>> doneMoves = 
+            new List<KeyValuePair<Move, RotationDirection>>();
+        InputOutput IO;
     }
 }
