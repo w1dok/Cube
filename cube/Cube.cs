@@ -45,7 +45,7 @@ namespace magic_cube
         private Material defaultMaterial = new DiffuseMaterial(new SolidColorBrush(Colors.Black));
         private Dictionary<CubeFace, Material> faces;
         public HashSet<Move> possibleMoves = new HashSet<Move>();
-        public Transform3D rotations = new Transform3DGroup();
+        public Transform3DGroup rotations = new Transform3DGroup();
 
         /// <summary>
         /// Cube constructor

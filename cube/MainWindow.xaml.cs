@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,7 +19,7 @@ using Microsoft.Win32;
 namespace magic_cube
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -29,7 +28,7 @@ namespace magic_cube
             InitializeComponent();
         }
 
-        public enum Difficulty
+        private enum Difficulty
         {
             Easy = 10,
             Normal = 20,
@@ -50,7 +49,7 @@ namespace magic_cube
         Movement movement = new Movement();
         HashSet<string> touchedFaces = new HashSet<string>();
 
-        List<KeyValuePair<Move, RotationDirection>> doneMoves = 
+        List<KeyValuePair<Move, RotationDirection>> doneMoves =
             new List<KeyValuePair<Move, RotationDirection>>();
         InputOutput IO;
 
@@ -344,4 +343,3 @@ namespace magic_cube
         }
     }
 }
-
